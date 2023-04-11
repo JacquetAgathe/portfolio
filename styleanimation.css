@@ -1,0 +1,154 @@
+
+.box {
+  position: relative;
+  width: 618px;
+  height: 618px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+
+  transform: rotate(45deg); 
+}
+
+.top,
+.bottom,
+.left,
+.right {
+  position: absolute;
+  animation: 8s linear infinite;
+}
+
+.top {
+  top: -3px;
+  left: -3px;
+  height: 3px;
+  animation-name: top;
+}
+@keyframes top {
+  25% {
+    width: 0;
+    background: #3E7B83;
+  }
+  38% {
+    width: calc(101%);
+    background: #44929D;
+  }
+  50% {
+    background: #409189;
+  }
+  62% {
+    background: #4BBDCC;
+  }
+  75% {
+    width: calc(101%);
+    background: #4EB7C4;
+  }
+  88% {
+    left: auto;
+    right: -3px;
+    width: 0;
+    background: #4BBDCC;
+  }
+}
+
+.bottom {
+  bottom: -3px;
+  right: -3px;
+  height: 3px;
+  animation-name: bottom;
+}
+@keyframes bottom {
+  0% {
+    width: 0;
+  }
+  12% {
+    width: calc(101%);
+    background: #4BBDCC;
+  }
+  25% {
+    background: #3E7B83;
+  }
+  38% {
+    background: #44929D;
+  }
+  50% {
+    width: calc(101%);
+    background: #409189;
+  }
+  62% {
+    left: -3px;
+    width: 0;
+    background: #4BBDCC;
+  }
+  75% {
+    background: #4EB7C4;
+  }
+}
+
+.left {
+  bottom: -3px;
+  left: -3px;
+  width: 3px;
+  animation-name: left;
+}
+@keyframes left {
+  12% {
+    height: 0;
+    background: #4BBDCC;
+  }
+  25% {
+    height: calc(101%);
+    background: #3E7B83;
+  }
+  38% {
+    background: #44929D;
+  }
+  50% {
+    background: #409189;
+  }
+  62% {
+    height: calc(101%);
+    background: #4BBDCC;
+  }
+  75% {
+    top: -3px;
+    height: 0;
+    background: #4EB7C4;
+  }
+  88% {
+    background: #4BBDCC;
+  }
+}
+
+.right {
+  top: -3px;
+  right: -3px;
+  width: 3px;
+  animation-name: right;
+}
+@keyframes right {
+  38% {
+    height: 0;
+    background: #3E7B83;
+  }
+  50% {
+    height: calc(101%);
+    background: #44929D;
+  }
+  62% {
+    background: #409189;
+  }
+  75% {
+    background: #4EB7C4;
+  }
+  88% {
+    height: calc(101%);
+    background: #4BBDCC;
+  }
+  100% {
+    top: auto;
+    bottom: -3px;
+    height: 0;
+    background: #4BBDCC;
+  }
+}
+

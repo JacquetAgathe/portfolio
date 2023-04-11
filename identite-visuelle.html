@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identité visuelle - Print AJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<h1>Portfolio Agathe Jacquet Webdesign</h1>
+    <!-- Barre de navigation -->
+    <header class="sticky-top bg-white">
+        <nav class="navbar">
+          <div class="container-fluid d-flex flex-row justify-content-between">
+            <a class="navbar-brand" href="./portfolio.html">
+              <img class="brand-logo" src="images/logo-test-agathejacquet.svg" alt="logo agathe jacquet" width="100">
+            </a>
+            <a class="d-flex justify-content-center align-items-center col-6" href="./portfolio.html">
+              <img class="hero-nav" src="./images/toile-vegetale/toile-vegetale-triangle - 2.png" alt="tableau végétal">
+            </a>
+            <button class="burger-button navbar-toggler text-uppercase regular" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-around regular">
+                <li class="nav-item">
+                  <a class="nav-link"  href="./portfolio.html#a-propos">À propos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./mes-projets.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Projets
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item active" aria-current="page" href="identite-visuelle.html">Identité visuelle - print</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="illustrations.html">Illustrations</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="webdesign.html">Web design</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </header>
+  
+    <main class="bg-light">
+
+    <!-- mes projets -->
+   
+    <div id="identite-visuelle" class="d-flex flex-column align-items-center mb-5 mr-5 ml-5">
+        <h2 class= "mb-5 mt-5">mes projets</h2>
+        <div class="d-flex flex-column align-items-center justify-content-between">
+            <h3 class="regular mt-5">///  identité visuelle et print  ///</h3>
+            <div class="presentation regular ">
+              Je vous accompagne dans la création de logotypes et chartes graphiques qui révèleront tout le potentiel de votre activité. <br>
+              Affiche, flyer, brochure, édition, plaquette de communication, paternes et motifs, … mon éventail de compétences saura répondre à votre projet.
+            </div>   
+        </div>
+
+         <!-- Le Colibri -->
+        <div class="d-flex flex-row p-3 mt-5 mb-5 bg-white flex-wrap justify-content-center">
+            <div class="row mb-3">
+                
+                <img class="projet-id col-6 w-50 h-100" src="./images/projets/print/le-colibri-cartevisite-mockup.jpg " alt="Carte de visite Le Colibri">
+                <div class="col-6 d-flex flex-column justify-content">
+                <p class="text-uppercase regular fs-5 pl-3"> ///  le colibri  /// </p>
+                <p class="italic fs-6">Service traiteur - Restauration</p>
+                <p class="text-uppercase light fs-6">CRÉATION DE L’IDENTITÉ VISUELLE ET DES SUPPORTS DE COMMUNICATION                </p>
+                <p class="light fs-6">Logo,
+                    Charte graphique
+                    Carte de visite
+                    Bannière Facebook</p>
+            </div>
+            </div>
+        <!-- Carrousel -->
+            <div class="d-flex flex-column   w-50">
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/projets/print/le-colibri-logo.jpg" class="d-block w-100 h-75" alt="logo Le Colibri">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/projets/print/le-colibri-carte-recto.jpg" class="d-block w-100" alt="Carte de visite Le Colibri">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/projets/print/le-colibri-carte-verso.jpg" class="d-block w-100" alt="Carte de Visite Le Colibri">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/projets/print/le-colibri-banniere-facebook.jpg" class="d-block w-100" alt="Bannière Facebook Le Colibri">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>  
+        </div>
+
+   <!-- Les Crocs des Cévennes -->
+   <div class="d-flex flex-row p-3 mt-5 mb-5 bg-white flex-wrap justify-content-center">
+    <div class="row mb-3">
+        
+        <img class="projet-id col-6 w-50 h-100" src="./images/projets/print/lcdc-carte-mockup1.jpg " alt="Carte de visite Le Colibri">
+        <div class="col-6 d-flex flex-column justify-content">
+        <p class="text-uppercase regular fs-5 pl-3"> ///  les crocs des cévennes  /// </p>
+        <p class="italic fs-6">Centre d'éducation canine</p>
+        <p class="text-uppercase light fs-6">création du logo et des supports de communication                </p>
+        <p class="light fs-6">Logo,
+            Charte graphique
+            Dépliant
+            Panneau de signalétique</p>
+    </div>
+    </div>
+<!-- Carrousel -->
+    <div class="d-flex flex-column   w-50">
+        <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/projets/print/lcdc-cartevisite-recto.jpg" class="d-block w-100 h-75" alt="carte de visite logo Les Crocs des Cévennes">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projets/print/lcdc-carteviste-verso.jpg" class="d-block w-100" alt="carte de visite Les Crocs des Cévennes">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projets/print/lcdc-logo.png" class="d-block w-100" alt="logo Les Crocs des Cévennes">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projets/print/lcdc-depliant-recto.jpg" class="d-block w-100" alt="dépliant Les Crocs des Cévennes">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projets/print/ldcd-depliant-verso.jpg" class="d-block w-100" alt="dépliant Les Crocs des Cévennes">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projets/print/lcdc-panneau-mockup1.jpg" class="d-block w-100" alt="Panneau de signalétique Les Crocs des Cévennes">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>  
+</div>
+    
+        <!-- WebKreative -->
+    <div class="d-flex flex-row p-3 mt-5 mb-5 bg-white flex-wrap justify-content-center">
+        <div class="row mb-3">
+            
+            <img class="projet-id col-6 w-50 h-100" src="./images/projets/print/webkreative-carte-mockup.jpg " alt="carte visite WebKreative">
+            <div class="col-6 d-flex flex-column justify-content">
+            <p class="text-uppercase regular fs-5 pl-3"> ///  webkreative /// </p>
+            <p class="italic fs-6">Développeur web freelance</p>
+            <p class="text-uppercase light fs-6">création d'un logo et de supports de comunication</p>
+            <p class="light fs-6">Logo,
+                Carte de visite,
+                </p>
+        </div>
+        </div>
+    <!-- Carrousel -->
+        <div class="d-flex flex-column   w-25">
+            <div id="carouselExampleControls2" class="carousel carousel-dark slide h-75" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/projets/print/webkreative-cartevisite-recto.jpg" class="d-block w-100 h-75" alt="carte de visite webkreative">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/projets/print/webkreative-cartevisite-verso.jpg" class="d-block w-100" alt="carte de visite webkreative">
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>  
+    </div>
+<!-- Le chaudron du Roc -->
+    <div class="d-flex flex-row p-3 mt-5 mb-5 bg-white flex-wrap justify-content-center">
+        <div class="row mb-3">
+            <img class="projet-id col-6 w-50 h-75" src="./images/projets/print/le-chaudron-du-roc-logo-noir.jpg " alt="logo Le Chaudron du Roc">
+            <div class="col-6 d-flex flex-column justify-content">
+            <p class="text-uppercase regular fs-5 pl-3"> ///  le chaudron du roc /// </p>
+            <p class="italic fs-6">Restaurant</p>
+            <p class="text-uppercase light fs-6">création du logo</p> 
+        </div>
+        </div>
+<!-- Archives -->
+    <div class="d-flex flex-column align-items-center justify-content-between mt-8">
+        <div class="regular mt-5">///  ARCHIVES  ///</div>
+        <div class="light fs-6 text-center  mt-2 mb-5 ">Découvrez quelques unes de mes toutes premières infographies réalisées il y a une dizaine d'années réalisées essentiellement pour des asscociations d'évènemnts musicaux. </div>   
+    </div>
+<!-- Carrousel -->
+<div class="d-flex flex-column   w-25">
+    <div id="carouselExampleControls" class="carousel carousel-dark slide h-75" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/projets/print/archives/distillerie.png" class="d-block w-100 h-75" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/alterview1.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/alterview2.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/alterview3.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/alterview4.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/alterview5.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/bassmati.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/break-strikes-back.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/fiestasol.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/travelsound.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/projets/print/archives/portrait.png" class="d-block w-100" alt="flyer évènement musical">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>  
+</div>
+</div> 
+    
+    
+  </main>
+
+  <footer class="italic text-dark d-flex flex-row justify-content-center align-items-center"> 
+    <div class="d-flex flex-row justify-content-center align-items-center">
+      <div>@ 2022, Droits photos, mentions légales</div>
+      <div class="hr2 d-flex flex-row align-items-center"></div>
+      <div class="d-flex flex-row align-items-center ">
+        <a class="footer-link d-flex flex-row align-items-center text-dark" href="contact.html">Contact</a>
+        <i class="fa-brands fa-linkedin footer-icons" href="#"></i>
+        <i class="fa-brands fa-instagram footer-icons" href="#"></i>
+      </div>
+  </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0072fe31fb.js" crossorigin="anonymous"></script>
+</body>
+</html>

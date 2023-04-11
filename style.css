@@ -1,0 +1,415 @@
+@font-face {
+    font-family: m-extralight;
+    src: url(./fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: m-extralight-italic;
+    src: url(./fonts/Montserrat-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: m-italic;
+    src: url(./fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: m-light;
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: m-light-italic;
+    src: url(./fonts/Montserrat-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: m-medium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: m-medium-italic;
+    src: url(./fonts/Montserrat-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: m-regular;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: m-thin;
+    src: url(./fonts/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: m-thin-italic;
+    src: url(./fonts/Montserrat-ThinItalic.ttf);
+}
+/* typographie */
+
+.regular {
+    font-family: 'm-regular', sans-serif;
+}
+
+.italic {
+    font-family: 'm-italic', sans-serif
+}
+.light {
+    font-family: 'm-light', sans-serif;
+}
+
+.light-italic{
+    font-family: 'm-light-italic', sans-serif;
+}
+.medium{
+    font-family: 'm-medium', sans-serif;
+}
+
+.fs-6{
+    font-size: 6px;
+}
+
+
+/* sections  */
+
+h1{
+    display: none;
+}
+
+/* 
+    J'ai commenté ce morceau, cela permet de supprimer la barre de scroll qui est en bas de l'écran qui donnait l'impression que ton hero sortait de l'écran
+ */
+/* body {
+    width: 100vw;
+} */
+
+main {
+    margin: 0 50px 0 50px;
+}
+
+/* 
+    Comme j'ai passé l'image en background sur la class .hero ce code n'a plus lieu d'exister     
+*/
+/* .hero img { */
+    /* width: 60%; */
+    /* max-width: 100%;
+    height: auto; */
+/* } */
+
+h2 {
+    font-family: m-regular, sans serif;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right bottom, #125660, #156b77, #18818f, #1a97a8, #1caec1) 1;
+    padding: .7em;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: m-regular, sans serif
+}
+
+
+/* navigation */
+
+.nav-button {
+    color: black;
+}
+.nav-button:hover{
+    color: #156b77;
+}
+.burger-button{
+    font-family: m-regular;
+    text-transform: uppercase;
+    margin-right: 50px;
+
+}
+.list-group-item{
+    text-transform: uppercase;
+}
+
+.hero-nav {
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.brand-logo {
+    margin-left: 50px;
+}
+
+
+/* page d'accueil >> suite dans le fichier styleanimation.css*/
+.hero {
+    width: 100%;
+    height: calc(100vh - 7.678762006403415vh);
+    background-image: url('./images/toile-vegetale/toile-vegetale-triangle - 2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* a propos */
+.a-propos-photo {
+    height: 500px;
+}
+
+.a-propos-text--excentre {
+    position: relative;
+    left: -120px;
+    top: -40px;
+}
+
+
+
+/* mes projets */
+
+.mes-projets-button {
+    border: 3px solid #F7BA3B;
+    border-radius: 40px;
+}
+
+.mes-projets-button:hover {
+    border-color: #E66769;
+}
+
+
+/* gallerie */
+.gallerie{
+  
+    object-fit: contain;
+   
+}
+
+
+/*  Hover et légende sur la gallerie illustrations */
+
+.hover-gallerie {
+position: relative;
+
+}
+
+.contenu-images {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff79;
+    cursor: pointer;
+  }
+  
+  .hover-gallerie:hover .fade-overlay {
+    opacity: 1;
+  }
+  
+  .legende {
+    color: dark;
+    font-family: m-regular;
+    font-size: 0,8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* CLICK POUR AGRANDIR L'IMAGE  */
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 7.678762006403415vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, .8);
+    width: 100vw;
+    height: calc(100vh - 7.678762006403415vh);
+  }
+
+  .ligthbox:target {
+    display: block;
+  }
+
+  .lightbox-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /*.click {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	z-index: 10;
+	color: white;
+	background-color: #0708a8;
+	font-size: 1em;
+	font-family: "Lucida Console", Courier, monospace;
+	opacity: 0; /*opacity 0 car le texte ne doit pas être affiché avant le hover*/
+/* } */
+
+/*.box:hover .click {
+	opacity: 1; /*le texte passe à opacity 1 et devient visible*/
+	/*transition: opacity 0.9s;/*
+}
+
+
+/*flexbox*/
+
+/*.conteneur-flexbox {
+  max-width: 650px;
+  margin: 100px auto 0 auto;
+  padding: 0px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.box {
+	position: relative;
+  width: 300px;
+  height: 300px;
+	border: 1px solid #838383;
+}*/
+
+.titre {
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+/*  images */
+
+.image_print {
+    background-image: url('./images/le-colibri-cartevisite-mockup.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 80vw;
+    height: 35vh;
+}
+
+.image-illustration {
+    background-image: url('./images/toile-vegetale/toile-vegetale-bleue.jpg');
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-size: cover;
+    width: 80vw;
+    height: 35vh;
+}
+
+.image-web-design {
+    background-image: url('./images/xtrem-appli.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 80vw;
+    height: 35vh;
+}
+
+
+
+.contact-photo{
+    height: 280px;
+    margin-left: 20px;
+    position: relative;
+    left: 20px;
+
+}
+.contact-text--excentre {
+    color: #082a79;
+}
+
+.infos-contact {
+    font-size: small;
+    color: #082a79;
+}
+
+/* Icons contacts */
+.material-symbols-outlined{ 
+   font-size: 45px;
+   color: #082a79;
+}
+.fa-brands {
+    font-size: 45px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #082a79;
+}
+
+.container-contact {
+height: 550px;
+width: 600px;
+border: ;
+background-color: #10b3c5cd;
+}
+
+.hr{ 
+    width: 100%;
+    height: 3px;
+    background: radial-gradient(rgb(1, 25, 121), rgba(253, 254, 255, 0.24));
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #176c77;
+    height: 90px;
+ 
+
+}
+
+.footer-icons {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000000c9;
+}
+
+
+.hr2{
+    width: 3px;
+    height: 40px;
+    background: radial-gradient(rgb(0, 7, 33), rgba(253, 254, 255, 0.24));
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer-link {
+    text-decoration:none;
+   
+}
